@@ -1,0 +1,130 @@
+/* Общие стили для body */
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для header */
+.header {
+    padding: 20px 0;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для контейнеров с контентом */
+.archive-content, .article-content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для одного поста */
+.one-post {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Стили для заголовка поста */
+.post-title {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/* Стили для ссылок в заголовках */
+.post-title a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для информации о статье */
+.article-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.article-author {
+    font-weight: bold;
+}
+
+.article-created-date {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Стили для текста статьи */
+.article-text {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.full-text {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Стили для ссылки "Все записи" */
+.back-link {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.back-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1000px) {
+    .archive-content, .article-content {
+        width: 90%;
+        padding: 0 5%;
+    }
+    
+    .header img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .article-info {
+        flex-direction: column;
+    }
+    
+    .article-created-date {
+        margin-top: 5px;
+    }
+    
+    .one-post {
+        padding: 15px;
+    }
+    
+    .post-title {
+        font-size: 20px;
+    }
+}
